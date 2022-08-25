@@ -1,0 +1,13 @@
+name: first-workflow.yaml
+
+on:
+  push:
+    branches:
+        - "main"
+        
+jobs:
+    lab-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Start job
+              run: echo 'Hello DevOps'   
